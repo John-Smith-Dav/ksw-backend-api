@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>KSW钱包下载页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #684bae;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bg {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+
+        .btn-container {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 4%;
+            margin-top: -150px;
+        }
+
+        .ios-button {
+            text-decoration: none;
+            display: inline-block;
+            width: 110px;
+            height: 40px;
+            background: url(./img/IOS@2x.png) no-repeat center/contain;
+            margin-right: 10px
+        }
+
+        .android-button {
+            text-decoration: none;
+            display: inline-block;
+            width: 110px;
+            height: 40px;
+            background: url(./img/Android@2x.png) no-repeat center/contain;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container" align="center">
+    <img class="bg" src="./img/xiazai@2x.png">
+    <div class="btn-container">
+        <a class="ios-button" href="itms-services:///?action=download-manifest&url=http://localhost:9001/ksw-iOS.plist"></a>
+        <a class="android-button" href="http://localhost:9001/service/download?type=apk_download"></a>
+    </div>
+</div>
+</body>
+
+</html>
